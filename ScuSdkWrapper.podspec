@@ -5,8 +5,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "A wrapper for SCU SDK, providing streamlined access to SCU functionalities."
   spec.description  = "ScuSdkWrapper simplifies integration with the SCU SDK, offering easy-to-use methods."
   spec.homepage     = "https://github.com/TheBestAlisa/ScuSdk"
-  # spec.license = { :type => "MIT", :file => "LICENSE.txt" }
-  spec.license = { :type => "MIT", :file => "/Users/alisamartirosyan/Desktop/Projects/ScuSdkWrapper/LICENSE.txt" }
+  spec.license = { :type => "MIT", :file => "LICENSE.txt" }
   spec.author       = { "Alisa Martirosyan" => "alisammartirosyan@gmail.com" }
   spec.ios.deployment_target = "14.0"
   spec.source_files = "ScuSdkWrapper/*"
