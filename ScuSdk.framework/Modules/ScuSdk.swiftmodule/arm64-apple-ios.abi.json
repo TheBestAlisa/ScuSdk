@@ -1,0 +1,4073 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScuSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScuError",
+        "printedName": "ScuError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "CommandNotSupported",
+            "printedName": "CommandNotSupported",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuError.Type) -> ScuSdk.ScuError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuError",
+                    "printedName": "ScuSdk.ScuError",
+                    "usr": "s:6ScuSdk0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuError",
+                        "printedName": "ScuSdk.ScuError",
+                        "usr": "s:6ScuSdk0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A5ErrorO19CommandNotSupportedyA2CmF",
+            "mangledName": "$s6ScuSdk0A5ErrorO19CommandNotSupportedyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "ConnectionIsNotReady",
+            "printedName": "ConnectionIsNotReady",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuError.Type) -> ScuSdk.ScuError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuError",
+                    "printedName": "ScuSdk.ScuError",
+                    "usr": "s:6ScuSdk0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuError",
+                        "printedName": "ScuSdk.ScuError",
+                        "usr": "s:6ScuSdk0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A5ErrorO20ConnectionIsNotReadyyA2CmF",
+            "mangledName": "$s6ScuSdk0A5ErrorO20ConnectionIsNotReadyyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "CommandFailed",
+            "printedName": "CommandFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuError.Type) -> ScuSdk.ScuError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuError",
+                    "printedName": "ScuSdk.ScuError",
+                    "usr": "s:6ScuSdk0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuError",
+                        "printedName": "ScuSdk.ScuError",
+                        "usr": "s:6ScuSdk0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A5ErrorO13CommandFailedyA2CmF",
+            "mangledName": "$s6ScuSdk0A5ErrorO13CommandFailedyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "InvalidKey",
+            "printedName": "InvalidKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuError.Type) -> ScuSdk.ScuError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuError",
+                    "printedName": "ScuSdk.ScuError",
+                    "usr": "s:6ScuSdk0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuError",
+                        "printedName": "ScuSdk.ScuError",
+                        "usr": "s:6ScuSdk0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A5ErrorO10InvalidKeyyA2CmF",
+            "mangledName": "$s6ScuSdk0A5ErrorO10InvalidKeyyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk0A5ErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s6ScuSdk0A5ErrorO16errorDescriptionSSSgvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A5ErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s6ScuSdk0A5ErrorO16errorDescriptionSSSgvg",
+                "moduleName": "ScuSdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ScuSdk.ScuError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuError",
+                    "printedName": "ScuSdk.ScuError",
+                    "usr": "s:6ScuSdk0A5ErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6ScuSdk0A5ErrorO8rawValueACSgSS_tcfc",
+            "mangledName": "$s6ScuSdk0A5ErrorO8rawValueACSgSS_tcfc",
+            "moduleName": "ScuSdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk0A5ErrorO8rawValueSSvp",
+            "mangledName": "$s6ScuSdk0A5ErrorO8rawValueSSvp",
+            "moduleName": "ScuSdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A5ErrorO8rawValueSSvg",
+                "mangledName": "$s6ScuSdk0A5ErrorO8rawValueSSvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6ScuSdk0A5ErrorO",
+        "mangledName": "$s6ScuSdk0A5ErrorO",
+        "moduleName": "ScuSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScuSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Scu",
+        "printedName": "Scu",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Scu",
+                "printedName": "ScuSdk.Scu",
+                "usr": "s:6ScuSdk0A0C"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk0A0C6sharedACvpZ",
+            "mangledName": "$s6ScuSdk0A0C6sharedACvpZ",
+            "moduleName": "ScuSdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scu",
+                    "printedName": "ScuSdk.Scu",
+                    "usr": "s:6ScuSdk0A0C"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A0C6sharedACvgZ",
+                "mangledName": "$s6ScuSdk0A0C6sharedACvgZ",
+                "moduleName": "ScuSdk",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "statusCommandDelegate",
+            "printedName": "statusCommandDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any ScuSdk.ScuStatusCommandDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuStatusCommandDelegate",
+                    "printedName": "any ScuSdk.ScuStatusCommandDelegate",
+                    "usr": "s:6ScuSdk0A21StatusCommandDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk0A0C21statusCommandDelegateAA0a6StatusdE0_pSgvp",
+            "mangledName": "$s6ScuSdk0A0C21statusCommandDelegateAA0a6StatusdE0_pSgvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ScuSdk.ScuStatusCommandDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuStatusCommandDelegate",
+                        "printedName": "any ScuSdk.ScuStatusCommandDelegate",
+                        "usr": "s:6ScuSdk0A21StatusCommandDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A0C21statusCommandDelegateAA0a6StatusdE0_pSgvg",
+                "mangledName": "$s6ScuSdk0A0C21statusCommandDelegateAA0a6StatusdE0_pSgvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ScuSdk.ScuStatusCommandDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuStatusCommandDelegate",
+                        "printedName": "any ScuSdk.ScuStatusCommandDelegate",
+                        "usr": "s:6ScuSdk0A21StatusCommandDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A0C21statusCommandDelegateAA0a6StatusdE0_pSgvs",
+                "mangledName": "$s6ScuSdk0A0C21statusCommandDelegateAA0a6StatusdE0_pSgvs",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A0C21statusCommandDelegateAA0a6StatusdE0_pSgvM",
+                "mangledName": "$s6ScuSdk0A0C21statusCommandDelegateAA0a6StatusdE0_pSgvM",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk0A0C7versionSSvp",
+            "mangledName": "$s6ScuSdk0A0C7versionSSvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A0C7versionSSvg",
+                "mangledName": "$s6ScuSdk0A0C7versionSSvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "commandStatusCallback",
+            "printedName": "commandStatusCallback",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((ScuSdk.ScuCommand, Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ScuSdk.ScuCommand, Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(ScuSdk.ScuCommand, Swift.Bool)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ScuCommand",
+                            "printedName": "ScuSdk.ScuCommand",
+                            "usr": "s:6ScuSdk0A7CommandO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk0A0C21commandStatusCallbackyAA0A7CommandO_SbtcSgvp",
+            "mangledName": "$s6ScuSdk0A0C21commandStatusCallbackyAA0A7CommandO_SbtcSgvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((ScuSdk.ScuCommand, Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(ScuSdk.ScuCommand, Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(ScuSdk.ScuCommand, Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ScuCommand",
+                                "printedName": "ScuSdk.ScuCommand",
+                                "usr": "s:6ScuSdk0A7CommandO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A0C21commandStatusCallbackyAA0A7CommandO_SbtcSgvg",
+                "mangledName": "$s6ScuSdk0A0C21commandStatusCallbackyAA0A7CommandO_SbtcSgvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((ScuSdk.ScuCommand, Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(ScuSdk.ScuCommand, Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(ScuSdk.ScuCommand, Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ScuCommand",
+                                "printedName": "ScuSdk.ScuCommand",
+                                "usr": "s:6ScuSdk0A7CommandO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A0C21commandStatusCallbackyAA0A7CommandO_SbtcSgvs",
+                "mangledName": "$s6ScuSdk0A0C21commandStatusCallbackyAA0A7CommandO_SbtcSgvs",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A0C21commandStatusCallbackyAA0A7CommandO_SbtcSgvM",
+                "mangledName": "$s6ScuSdk0A0C21commandStatusCallbackyAA0A7CommandO_SbtcSgvM",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6ScuSdk0A0C7connect3keyySS_tKF",
+            "mangledName": "$s6ScuSdk0A0C7connect3keyySS_tKF",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6ScuSdk0A0C10disconnectyyF",
+            "mangledName": "$s6ScuSdk0A0C10disconnectyyF",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bleConnectionStateDidChanged",
+            "printedName": "bleConnectionStateDidChanged(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.BleConnectionState) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BleConnectionState",
+                    "printedName": "ScuSdk.BleConnectionState",
+                    "usr": "s:6ScuSdk18BleConnectionStateO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6ScuSdk0A0C28bleConnectionStateDidChanged2toyyAA03BledE0Oc_tF",
+            "mangledName": "$s6ScuSdk0A0C28bleConnectionStateDidChanged2toyyAA03BledE0Oc_tF",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "command",
+            "printedName": "command(type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ScuCommand",
+                "printedName": "ScuSdk.ScuCommand",
+                "usr": "s:6ScuSdk0A7CommandO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6ScuSdk0A0C7command4typeyAA0A7CommandO_tYaKF",
+            "mangledName": "$s6ScuSdk0A0C7command4typeyAA0A7CommandO_tYaKF",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startContinuousNotification",
+            "printedName": "startContinuousNotification(type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ScuCommand",
+                "printedName": "ScuSdk.ScuCommand",
+                "usr": "s:6ScuSdk0A7CommandO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6ScuSdk0A0C27startContinuousNotification4typeyAA0A7CommandO_tYaKF",
+            "mangledName": "$s6ScuSdk0A0C27startContinuousNotification4typeyAA0A7CommandO_tYaKF",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopContinuousNotification",
+            "printedName": "stopContinuousNotification(type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ScuCommand",
+                "printedName": "ScuSdk.ScuCommand",
+                "usr": "s:6ScuSdk0A7CommandO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6ScuSdk0A0C26stopContinuousNotification4typeyAA0A7CommandO_tF",
+            "mangledName": "$s6ScuSdk0A0C26stopContinuousNotification4typeyAA0A7CommandO_tF",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6ScuSdk0A0C",
+        "mangledName": "$s6ScuSdk0A0C",
+        "moduleName": "ScuSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScuStatusCommandDelegate",
+        "printedName": "ScuStatusCommandDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onBcmDoorChange",
+            "printedName": "onBcmDoorChange(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BcmDoor",
+                "printedName": "ScuSdk.BcmDoor",
+                "usr": "s:6ScuSdk7BcmDoorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6ScuSdk0A21StatusCommandDelegateP15onBcmDoorChange5valueyAA0gH0V_tF",
+            "mangledName": "$s6ScuSdk0A21StatusCommandDelegateP15onBcmDoorChange5valueyAA0gH0V_tF",
+            "moduleName": "ScuSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : ScuSdk.ScuStatusCommandDelegate>",
+            "sugared_genericSig": "<Self where Self : ScuSdk.ScuStatusCommandDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onPlgmTrSwChange",
+            "printedName": "onPlgmTrSwChange(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlgmTrSw",
+                "printedName": "ScuSdk.PlgmTrSw",
+                "usr": "s:6ScuSdk8PlgmTrSwV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6ScuSdk0A21StatusCommandDelegateP16onPlgmTrSwChange5valueyAA0ghI0V_tF",
+            "mangledName": "$s6ScuSdk0A21StatusCommandDelegateP16onPlgmTrSwChange5valueyAA0ghI0V_tF",
+            "moduleName": "ScuSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : ScuSdk.ScuStatusCommandDelegate>",
+            "sugared_genericSig": "<Self where Self : ScuSdk.ScuStatusCommandDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onBcmSunroofPosnChange",
+            "printedName": "onBcmSunroofPosnChange(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BcmSunroofPosn",
+                "printedName": "ScuSdk.BcmSunroofPosn",
+                "usr": "s:6ScuSdk14BcmSunroofPosnV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6ScuSdk0A21StatusCommandDelegateP22onBcmSunroofPosnChange5valueyAA0ghI0V_tF",
+            "mangledName": "$s6ScuSdk0A21StatusCommandDelegateP22onBcmSunroofPosnChange5valueyAA0ghI0V_tF",
+            "moduleName": "ScuSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : ScuSdk.ScuStatusCommandDelegate>",
+            "sugared_genericSig": "<Self where Self : ScuSdk.ScuStatusCommandDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6ScuSdk0A21StatusCommandDelegateP",
+        "mangledName": "$s6ScuSdk0A21StatusCommandDelegateP",
+        "moduleName": "ScuSdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "ScuSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScuSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScuSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScuCommand",
+        "printedName": "ScuCommand",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "windowsAllOpen",
+            "printedName": "windowsAllOpen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO14windowsAllOpenyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO14windowsAllOpenyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "windowsAllClose",
+            "printedName": "windowsAllClose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO15windowsAllCloseyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO15windowsAllCloseyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "windowTailgateActive",
+            "printedName": "windowTailgateActive",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO20windowTailgateActiveyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO20windowTailgateActiveyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "windowTailgateHalt",
+            "printedName": "windowTailgateHalt",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO18windowTailgateHaltyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO18windowTailgateHaltyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "californiaModeToggle",
+            "printedName": "californiaModeToggle",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO20californiaModeToggleyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO20californiaModeToggleyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "tailgateActive",
+            "printedName": "tailgateActive",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO14tailgateActiveyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO14tailgateActiveyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "tailgateHalt",
+            "printedName": "tailgateHalt",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO12tailgateHaltyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO12tailgateHaltyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "sunroofOpen",
+            "printedName": "sunroofOpen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO11sunroofOpenyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO11sunroofOpenyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "sunroofClose",
+            "printedName": "sunroofClose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO12sunroofCloseyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO12sunroofCloseyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "vehicleLock",
+            "printedName": "vehicleLock",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO11vehicleLockyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO11vehicleLockyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "vehicleUnlock",
+            "printedName": "vehicleUnlock",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO13vehicleUnlockyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO13vehicleUnlockyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "vehicleStart",
+            "printedName": "vehicleStart",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO12vehicleStartyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO12vehicleStartyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "chargeGunUnlock",
+            "printedName": "chargeGunUnlock",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuCommand.Type) -> ScuSdk.ScuCommand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScuCommand",
+                    "printedName": "ScuSdk.ScuCommand",
+                    "usr": "s:6ScuSdk0A7CommandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuCommand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuCommand",
+                        "printedName": "ScuSdk.ScuCommand",
+                        "usr": "s:6ScuSdk0A7CommandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A7CommandO15chargeGunUnlockyA2CmF",
+            "mangledName": "$s6ScuSdk0A7CommandO15chargeGunUnlockyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk0A7CommandO11descriptionSSvp",
+            "mangledName": "$s6ScuSdk0A7CommandO11descriptionSSvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A7CommandO11descriptionSSvg",
+                "mangledName": "$s6ScuSdk0A7CommandO11descriptionSSvg",
+                "moduleName": "ScuSdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk0A7CommandO5values6UInt16Vvp",
+            "mangledName": "$s6ScuSdk0A7CommandO5values6UInt16Vvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt16",
+                    "printedName": "Swift.UInt16",
+                    "usr": "s:s6UInt16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A7CommandO5values6UInt16Vvg",
+                "mangledName": "$s6ScuSdk0A7CommandO5values6UInt16Vvg",
+                "moduleName": "ScuSdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ScuCommand",
+                "printedName": "ScuSdk.ScuCommand",
+                "usr": "s:6ScuSdk0A7CommandO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ScuCommand",
+                "printedName": "ScuSdk.ScuCommand",
+                "usr": "s:6ScuSdk0A7CommandO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6ScuSdk0A7CommandO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s6ScuSdk0A7CommandO2eeoiySbAC_ACtFZ",
+            "moduleName": "ScuSdk",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk0A7CommandO9hashValueSivp",
+            "mangledName": "$s6ScuSdk0A7CommandO9hashValueSivp",
+            "moduleName": "ScuSdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk0A7CommandO9hashValueSivg",
+                "mangledName": "$s6ScuSdk0A7CommandO9hashValueSivg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6ScuSdk0A7CommandO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s6ScuSdk0A7CommandO4hash4intoys6HasherVz_tF",
+            "moduleName": "ScuSdk",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6ScuSdk0A7CommandO",
+        "mangledName": "$s6ScuSdk0A7CommandO",
+        "moduleName": "ScuSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScuStatuses",
+        "printedName": "ScuStatuses",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bcmDoor",
+            "printedName": "bcmDoor",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuStatuses.Type) -> (ScuSdk.BcmDoor) -> ScuSdk.ScuStatuses",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ScuSdk.BcmDoor) -> ScuSdk.ScuStatuses",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuStatuses",
+                        "printedName": "ScuSdk.ScuStatuses",
+                        "usr": "s:6ScuSdk0A8StatusesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BcmDoor",
+                        "printedName": "ScuSdk.BcmDoor",
+                        "usr": "s:6ScuSdk7BcmDoorV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuStatuses.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuStatuses",
+                        "printedName": "ScuSdk.ScuStatuses",
+                        "usr": "s:6ScuSdk0A8StatusesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A8StatusesO7bcmDooryAcA03BcmE0VcACmF",
+            "mangledName": "$s6ScuSdk0A8StatusesO7bcmDooryAcA03BcmE0VcACmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "plgmTrSw",
+            "printedName": "plgmTrSw",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuStatuses.Type) -> (ScuSdk.PlgmTrSw) -> ScuSdk.ScuStatuses",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ScuSdk.PlgmTrSw) -> ScuSdk.ScuStatuses",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuStatuses",
+                        "printedName": "ScuSdk.ScuStatuses",
+                        "usr": "s:6ScuSdk0A8StatusesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlgmTrSw",
+                        "printedName": "ScuSdk.PlgmTrSw",
+                        "usr": "s:6ScuSdk8PlgmTrSwV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuStatuses.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuStatuses",
+                        "printedName": "ScuSdk.ScuStatuses",
+                        "usr": "s:6ScuSdk0A8StatusesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A8StatusesO8plgmTrSwyAcA04PlgmeF0VcACmF",
+            "mangledName": "$s6ScuSdk0A8StatusesO8plgmTrSwyAcA04PlgmeF0VcACmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "bcmSunroofPosn",
+            "printedName": "bcmSunroofPosn",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.ScuStatuses.Type) -> (ScuSdk.BcmSunroofPosn) -> ScuSdk.ScuStatuses",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ScuSdk.BcmSunroofPosn) -> ScuSdk.ScuStatuses",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuStatuses",
+                        "printedName": "ScuSdk.ScuStatuses",
+                        "usr": "s:6ScuSdk0A8StatusesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BcmSunroofPosn",
+                        "printedName": "ScuSdk.BcmSunroofPosn",
+                        "usr": "s:6ScuSdk14BcmSunroofPosnV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.ScuStatuses.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScuStatuses",
+                        "printedName": "ScuSdk.ScuStatuses",
+                        "usr": "s:6ScuSdk0A8StatusesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk0A8StatusesO14bcmSunroofPosnyAcA03BcmeF0VcACmF",
+            "mangledName": "$s6ScuSdk0A8StatusesO14bcmSunroofPosnyAcA03BcmeF0VcACmF",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6ScuSdk0A8StatusesO",
+        "mangledName": "$s6ScuSdk0A8StatusesO",
+        "moduleName": "ScuSdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BcmDoor",
+        "printedName": "BcmDoor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "readableName",
+            "printedName": "readableName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk7BcmDoorV12readableNameSSvp",
+            "mangledName": "$s6ScuSdk7BcmDoorV12readableNameSSvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV12readableNameSSvg",
+                "mangledName": "$s6ScuSdk7BcmDoorV12readableNameSSvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV12readableNameSSvs",
+                "mangledName": "$s6ScuSdk7BcmDoorV12readableNameSSvs",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV12readableNameSSvM",
+                "mangledName": "$s6ScuSdk7BcmDoorV12readableNameSSvM",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "frontDoorsUnlocked",
+            "printedName": "frontDoorsUnlocked",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk7BcmDoorV18frontDoorsUnlockedSbvp",
+            "mangledName": "$s6ScuSdk7BcmDoorV18frontDoorsUnlockedSbvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV18frontDoorsUnlockedSbvg",
+                "mangledName": "$s6ScuSdk7BcmDoorV18frontDoorsUnlockedSbvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV18frontDoorsUnlockedSbvs",
+                "mangledName": "$s6ScuSdk7BcmDoorV18frontDoorsUnlockedSbvs",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV18frontDoorsUnlockedSbvM",
+                "mangledName": "$s6ScuSdk7BcmDoorV18frontDoorsUnlockedSbvM",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "driverFrontOpen",
+            "printedName": "driverFrontOpen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk7BcmDoorV15driverFrontOpenSbvp",
+            "mangledName": "$s6ScuSdk7BcmDoorV15driverFrontOpenSbvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV15driverFrontOpenSbvg",
+                "mangledName": "$s6ScuSdk7BcmDoorV15driverFrontOpenSbvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV15driverFrontOpenSbvs",
+                "mangledName": "$s6ScuSdk7BcmDoorV15driverFrontOpenSbvs",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV15driverFrontOpenSbvM",
+                "mangledName": "$s6ScuSdk7BcmDoorV15driverFrontOpenSbvM",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "passangerFrontOpen",
+            "printedName": "passangerFrontOpen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk7BcmDoorV18passangerFrontOpenSbvp",
+            "mangledName": "$s6ScuSdk7BcmDoorV18passangerFrontOpenSbvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV18passangerFrontOpenSbvg",
+                "mangledName": "$s6ScuSdk7BcmDoorV18passangerFrontOpenSbvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV18passangerFrontOpenSbvs",
+                "mangledName": "$s6ScuSdk7BcmDoorV18passangerFrontOpenSbvs",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV18passangerFrontOpenSbvM",
+                "mangledName": "$s6ScuSdk7BcmDoorV18passangerFrontOpenSbvM",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "leftRearOpen",
+            "printedName": "leftRearOpen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk7BcmDoorV12leftRearOpenSbvp",
+            "mangledName": "$s6ScuSdk7BcmDoorV12leftRearOpenSbvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV12leftRearOpenSbvg",
+                "mangledName": "$s6ScuSdk7BcmDoorV12leftRearOpenSbvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV12leftRearOpenSbvs",
+                "mangledName": "$s6ScuSdk7BcmDoorV12leftRearOpenSbvs",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV12leftRearOpenSbvM",
+                "mangledName": "$s6ScuSdk7BcmDoorV12leftRearOpenSbvM",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rightRearOpen",
+            "printedName": "rightRearOpen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk7BcmDoorV13rightRearOpenSbvp",
+            "mangledName": "$s6ScuSdk7BcmDoorV13rightRearOpenSbvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV13rightRearOpenSbvg",
+                "mangledName": "$s6ScuSdk7BcmDoorV13rightRearOpenSbvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV13rightRearOpenSbvs",
+                "mangledName": "$s6ScuSdk7BcmDoorV13rightRearOpenSbvs",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk7BcmDoorV13rightRearOpenSbvM",
+                "mangledName": "$s6ScuSdk7BcmDoorV13rightRearOpenSbvM",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6ScuSdk7BcmDoorV",
+        "mangledName": "$s6ScuSdk7BcmDoorV",
+        "moduleName": "ScuSdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrunkStatus",
+        "printedName": "TrunkStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.TrunkStatus.Type) -> ScuSdk.TrunkStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrunkStatus",
+                    "printedName": "ScuSdk.TrunkStatus",
+                    "usr": "s:6ScuSdk11TrunkStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.TrunkStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrunkStatus",
+                        "printedName": "ScuSdk.TrunkStatus",
+                        "usr": "s:6ScuSdk11TrunkStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk11TrunkStatusO4noneyA2CmF",
+            "mangledName": "$s6ScuSdk11TrunkStatusO4noneyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "closed",
+            "printedName": "closed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.TrunkStatus.Type) -> ScuSdk.TrunkStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrunkStatus",
+                    "printedName": "ScuSdk.TrunkStatus",
+                    "usr": "s:6ScuSdk11TrunkStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.TrunkStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrunkStatus",
+                        "printedName": "ScuSdk.TrunkStatus",
+                        "usr": "s:6ScuSdk11TrunkStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk11TrunkStatusO6closedyA2CmF",
+            "mangledName": "$s6ScuSdk11TrunkStatusO6closedyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "fullyOpen",
+            "printedName": "fullyOpen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.TrunkStatus.Type) -> ScuSdk.TrunkStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrunkStatus",
+                    "printedName": "ScuSdk.TrunkStatus",
+                    "usr": "s:6ScuSdk11TrunkStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.TrunkStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrunkStatus",
+                        "printedName": "ScuSdk.TrunkStatus",
+                        "usr": "s:6ScuSdk11TrunkStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk11TrunkStatusO9fullyOpenyA2CmF",
+            "mangledName": "$s6ScuSdk11TrunkStatusO9fullyOpenyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "halt",
+            "printedName": "halt",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.TrunkStatus.Type) -> ScuSdk.TrunkStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrunkStatus",
+                    "printedName": "ScuSdk.TrunkStatus",
+                    "usr": "s:6ScuSdk11TrunkStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.TrunkStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrunkStatus",
+                        "printedName": "ScuSdk.TrunkStatus",
+                        "usr": "s:6ScuSdk11TrunkStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk11TrunkStatusO4haltyA2CmF",
+            "mangledName": "$s6ScuSdk11TrunkStatusO4haltyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "opening",
+            "printedName": "opening",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.TrunkStatus.Type) -> ScuSdk.TrunkStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrunkStatus",
+                    "printedName": "ScuSdk.TrunkStatus",
+                    "usr": "s:6ScuSdk11TrunkStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.TrunkStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrunkStatus",
+                        "printedName": "ScuSdk.TrunkStatus",
+                        "usr": "s:6ScuSdk11TrunkStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk11TrunkStatusO7openingyA2CmF",
+            "mangledName": "$s6ScuSdk11TrunkStatusO7openingyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "closing",
+            "printedName": "closing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.TrunkStatus.Type) -> ScuSdk.TrunkStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrunkStatus",
+                    "printedName": "ScuSdk.TrunkStatus",
+                    "usr": "s:6ScuSdk11TrunkStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.TrunkStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrunkStatus",
+                        "printedName": "ScuSdk.TrunkStatus",
+                        "usr": "s:6ScuSdk11TrunkStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk11TrunkStatusO7closingyA2CmF",
+            "mangledName": "$s6ScuSdk11TrunkStatusO7closingyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk11TrunkStatusO11descriptionSSvp",
+            "mangledName": "$s6ScuSdk11TrunkStatusO11descriptionSSvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk11TrunkStatusO11descriptionSSvg",
+                "mangledName": "$s6ScuSdk11TrunkStatusO11descriptionSSvg",
+                "moduleName": "ScuSdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ScuSdk.TrunkStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrunkStatus",
+                    "printedName": "ScuSdk.TrunkStatus",
+                    "usr": "s:6ScuSdk11TrunkStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6ScuSdk11TrunkStatusO8rawValueACSgs5UInt8V_tcfc",
+            "mangledName": "$s6ScuSdk11TrunkStatusO8rawValueACSgs5UInt8V_tcfc",
+            "moduleName": "ScuSdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk11TrunkStatusO8rawValues5UInt8Vvp",
+            "mangledName": "$s6ScuSdk11TrunkStatusO8rawValues5UInt8Vvp",
+            "moduleName": "ScuSdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk11TrunkStatusO8rawValues5UInt8Vvg",
+                "mangledName": "$s6ScuSdk11TrunkStatusO8rawValues5UInt8Vvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6ScuSdk11TrunkStatusO",
+        "mangledName": "$s6ScuSdk11TrunkStatusO",
+        "moduleName": "ScuSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "UInt8",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlgmTrSw",
+        "printedName": "PlgmTrSw",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "readableName",
+            "printedName": "readableName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk8PlgmTrSwV12readableNameSSvp",
+            "mangledName": "$s6ScuSdk8PlgmTrSwV12readableNameSSvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk8PlgmTrSwV12readableNameSSvg",
+                "mangledName": "$s6ScuSdk8PlgmTrSwV12readableNameSSvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk8PlgmTrSwV12readableNameSSvs",
+                "mangledName": "$s6ScuSdk8PlgmTrSwV12readableNameSSvs",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk8PlgmTrSwV12readableNameSSvM",
+                "mangledName": "$s6ScuSdk8PlgmTrSwV12readableNameSSvM",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrunkStatus",
+                "printedName": "ScuSdk.TrunkStatus",
+                "usr": "s:6ScuSdk11TrunkStatusO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk8PlgmTrSwV5valueAA11TrunkStatusOvp",
+            "mangledName": "$s6ScuSdk8PlgmTrSwV5valueAA11TrunkStatusOvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrunkStatus",
+                    "printedName": "ScuSdk.TrunkStatus",
+                    "usr": "s:6ScuSdk11TrunkStatusO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk8PlgmTrSwV5valueAA11TrunkStatusOvg",
+                "mangledName": "$s6ScuSdk8PlgmTrSwV5valueAA11TrunkStatusOvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrunkStatus",
+                    "printedName": "ScuSdk.TrunkStatus",
+                    "usr": "s:6ScuSdk11TrunkStatusO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk8PlgmTrSwV5valueAA11TrunkStatusOvs",
+                "mangledName": "$s6ScuSdk8PlgmTrSwV5valueAA11TrunkStatusOvs",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk8PlgmTrSwV5valueAA11TrunkStatusOvM",
+                "mangledName": "$s6ScuSdk8PlgmTrSwV5valueAA11TrunkStatusOvM",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6ScuSdk8PlgmTrSwV",
+        "mangledName": "$s6ScuSdk8PlgmTrSwV",
+        "moduleName": "ScuSdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BcmSunroofPosn",
+        "printedName": "BcmSunroofPosn",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "readableName",
+            "printedName": "readableName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk14BcmSunroofPosnV12readableNameSSvp",
+            "mangledName": "$s6ScuSdk14BcmSunroofPosnV12readableNameSSvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk14BcmSunroofPosnV12readableNameSSvg",
+                "mangledName": "$s6ScuSdk14BcmSunroofPosnV12readableNameSSvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk14BcmSunroofPosnV12readableNameSSvs",
+                "mangledName": "$s6ScuSdk14BcmSunroofPosnV12readableNameSSvs",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk14BcmSunroofPosnV12readableNameSSvM",
+                "mangledName": "$s6ScuSdk14BcmSunroofPosnV12readableNameSSvM",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk14BcmSunroofPosnV5valueSivp",
+            "mangledName": "$s6ScuSdk14BcmSunroofPosnV5valueSivp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk14BcmSunroofPosnV5valueSivg",
+                "mangledName": "$s6ScuSdk14BcmSunroofPosnV5valueSivg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk14BcmSunroofPosnV5valueSivs",
+                "mangledName": "$s6ScuSdk14BcmSunroofPosnV5valueSivs",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk14BcmSunroofPosnV5valueSivM",
+                "mangledName": "$s6ScuSdk14BcmSunroofPosnV5valueSivM",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6ScuSdk14BcmSunroofPosnV",
+        "mangledName": "$s6ScuSdk14BcmSunroofPosnV",
+        "moduleName": "ScuSdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScuSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScuSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BleConnectionState",
+        "printedName": "BleConnectionState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "NotFound",
+            "printedName": "NotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.BleConnectionState.Type) -> ScuSdk.BleConnectionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BleConnectionState",
+                    "printedName": "ScuSdk.BleConnectionState",
+                    "usr": "s:6ScuSdk18BleConnectionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.BleConnectionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BleConnectionState",
+                        "printedName": "ScuSdk.BleConnectionState",
+                        "usr": "s:6ScuSdk18BleConnectionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk18BleConnectionStateO8NotFoundyA2CmF",
+            "mangledName": "$s6ScuSdk18BleConnectionStateO8NotFoundyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "NotEnabled",
+            "printedName": "NotEnabled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.BleConnectionState.Type) -> ScuSdk.BleConnectionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BleConnectionState",
+                    "printedName": "ScuSdk.BleConnectionState",
+                    "usr": "s:6ScuSdk18BleConnectionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.BleConnectionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BleConnectionState",
+                        "printedName": "ScuSdk.BleConnectionState",
+                        "usr": "s:6ScuSdk18BleConnectionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk18BleConnectionStateO10NotEnabledyA2CmF",
+            "mangledName": "$s6ScuSdk18BleConnectionStateO10NotEnabledyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "Disconnected",
+            "printedName": "Disconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.BleConnectionState.Type) -> ScuSdk.BleConnectionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BleConnectionState",
+                    "printedName": "ScuSdk.BleConnectionState",
+                    "usr": "s:6ScuSdk18BleConnectionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.BleConnectionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BleConnectionState",
+                        "printedName": "ScuSdk.BleConnectionState",
+                        "usr": "s:6ScuSdk18BleConnectionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk18BleConnectionStateO12DisconnectedyA2CmF",
+            "mangledName": "$s6ScuSdk18BleConnectionStateO12DisconnectedyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "Connected",
+            "printedName": "Connected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ScuSdk.BleConnectionState.Type) -> ScuSdk.BleConnectionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BleConnectionState",
+                    "printedName": "ScuSdk.BleConnectionState",
+                    "usr": "s:6ScuSdk18BleConnectionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ScuSdk.BleConnectionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BleConnectionState",
+                        "printedName": "ScuSdk.BleConnectionState",
+                        "usr": "s:6ScuSdk18BleConnectionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6ScuSdk18BleConnectionStateO9ConnectedyA2CmF",
+            "mangledName": "$s6ScuSdk18BleConnectionStateO9ConnectedyA2CmF",
+            "moduleName": "ScuSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk18BleConnectionStateO11descriptionSSvp",
+            "mangledName": "$s6ScuSdk18BleConnectionStateO11descriptionSSvp",
+            "moduleName": "ScuSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk18BleConnectionStateO11descriptionSSvg",
+                "mangledName": "$s6ScuSdk18BleConnectionStateO11descriptionSSvg",
+                "moduleName": "ScuSdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ScuSdk.BleConnectionState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BleConnectionState",
+                    "printedName": "ScuSdk.BleConnectionState",
+                    "usr": "s:6ScuSdk18BleConnectionStateO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6ScuSdk18BleConnectionStateO8rawValueACSgSS_tcfc",
+            "mangledName": "$s6ScuSdk18BleConnectionStateO8rawValueACSgSS_tcfc",
+            "moduleName": "ScuSdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6ScuSdk18BleConnectionStateO8rawValueSSvp",
+            "mangledName": "$s6ScuSdk18BleConnectionStateO8rawValueSSvp",
+            "moduleName": "ScuSdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6ScuSdk18BleConnectionStateO8rawValueSSvg",
+                "mangledName": "$s6ScuSdk18BleConnectionStateO8rawValueSSvg",
+                "moduleName": "ScuSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6ScuSdk18BleConnectionStateO",
+        "mangledName": "$s6ScuSdk18BleConnectionStateO",
+        "moduleName": "ScuSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "ScuSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "ScuSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "ScuSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ScuSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ScuSdk"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuError.swift",
+      "kind": "StringLiteral",
+      "offset": 97,
+      "length": 23,
+      "value": "\"Command not supported\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuError.swift",
+      "kind": "StringLiteral",
+      "offset": 153,
+      "length": 50,
+      "value": "\"Ble Connection is not ready for sending commands\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuError.swift",
+      "kind": "StringLiteral",
+      "offset": 229,
+      "length": 22,
+      "value": "\"Cammand was not sent\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuError.swift",
+      "kind": "StringLiteral",
+      "offset": 274,
+      "length": 22,
+      "value": "\"Invalid key provided\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuError.swift",
+      "kind": "StringLiteral",
+      "offset": 97,
+      "length": 23,
+      "value": "\"Command not supported\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuError.swift",
+      "kind": "StringLiteral",
+      "offset": 153,
+      "length": 50,
+      "value": "\"Ble Connection is not ready for sending commands\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuError.swift",
+      "kind": "StringLiteral",
+      "offset": 229,
+      "length": 22,
+      "value": "\"Cammand was not sent\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuError.swift",
+      "kind": "StringLiteral",
+      "offset": 274,
+      "length": 22,
+      "value": "\"Invalid key provided\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "StringLiteral",
+      "offset": 313,
+      "length": 11,
+      "value": "\"24.9.2700\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3333,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3368,
+      "length": 4,
+      "value": "0x0A"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3403,
+      "length": 4,
+      "value": "0x10"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3333,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3368,
+      "length": 4,
+      "value": "0x0A"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3403,
+      "length": 4,
+      "value": "0x10"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3333,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3368,
+      "length": 4,
+      "value": "0x0A"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3403,
+      "length": 4,
+      "value": "0x10"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3478,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3502,
+      "length": 4,
+      "value": "0x40"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3527,
+      "length": 4,
+      "value": "0x41"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3853,
+      "length": 4,
+      "value": "0x51"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3478,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3502,
+      "length": 4,
+      "value": "0x40"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3527,
+      "length": 4,
+      "value": "0x41"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3853,
+      "length": 4,
+      "value": "0x51"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3478,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3502,
+      "length": 4,
+      "value": "0x40"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3527,
+      "length": 4,
+      "value": "0x41"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/Scu.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3853,
+      "length": 4,
+      "value": "0x51"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/UUIDs.swift",
+      "kind": "StringLiteral",
+      "offset": 115,
+      "length": 38,
+      "value": "\"00001523-1212-efde-1523-785feabcd122\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/UUIDs.swift",
+      "kind": "StringLiteral",
+      "offset": 426,
+      "length": 38,
+      "value": "\"00001903-1212-efde-1523-785feabcd122\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "StringLiteral",
+      "offset": 2745,
+      "length": 9,
+      "value": "\"BcmDoor\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2817,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2862,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2910,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2952,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2995,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3053,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3075,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3098,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3116,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3137,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3158,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3053,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3075,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3098,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3116,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3137,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3158,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3053,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3075,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3098,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3116,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3137,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3158,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuCommand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5199,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ContinuousNotification.swift",
+      "kind": "IntegerLiteral",
+      "offset": 91,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ContinuousNotification.swift",
+      "kind": "IntegerLiteral",
+      "offset": 125,
+      "length": 4,
+      "value": "2000"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ContinuousNotification.swift",
+      "kind": "BooleanLiteral",
+      "offset": 161,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuPeripheralManager.swift",
+      "kind": "Dictionary",
+      "offset": 317,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuPeripheralManager.swift",
+      "kind": "Dictionary",
+      "offset": 1609,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuPeripheralManager.swift",
+      "kind": "Array",
+      "offset": 1655,
+      "length": 231,
+      "value": "[0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF]"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuPeripheralManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1930,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuPeripheralManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1984,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuPeripheralManager.swift",
+      "kind": "Array",
+      "offset": 2251,
+      "length": 36,
+      "value": "[0x3A, 0xAF, 0x7D, 0xE2, 0x5B, 0x88]"
+    },
+    {
+      "filePath": "\/Users\/ctlapple01\/GIT_CHEVALIER\/iOS_SDK_SCU\/ScuSdk\/ScuSdk\/ScuPeripheralManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2392,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

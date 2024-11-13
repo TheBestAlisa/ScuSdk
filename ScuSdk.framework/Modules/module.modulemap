@@ -1,0 +1,11 @@
+framework module ScuSdk {
+  umbrella header "ScuSdk.h"
+  export *
+
+  module * { export * }
+}
+
+module ScuSdk.Swift {
+  header "ScuSdk-Swift.h"
+  requires objc
+}
