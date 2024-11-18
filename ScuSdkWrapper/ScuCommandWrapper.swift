@@ -84,8 +84,6 @@ extension ScuCommand {
             return .vehicleStart
         case .chargeGunUnlock:
             return .chargeGunUnlock
-        @unknown default:
-            fatalError()
         }
     }
 }

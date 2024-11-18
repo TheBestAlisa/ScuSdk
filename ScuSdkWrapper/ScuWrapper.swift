@@ -12,38 +12,22 @@ public class ScuWrapper: NSObject {
     
     public static let shared = ScuWrapper()
     
-    private override init() { }
+    private let scuSdk: Scu
+    private let queue = DispatchQueue(label: "com.scuwrapper.queue", qos: .background)
+    
+    private override init() {
+        self.scuSdk = Scu.shared
+    }
     
     /// Scu SDK version
-    public let version: String = Scu.shared.version
+    public var version: String { scuSdk.version }
     
     /// Callback used to receive the status of the command sent.
     /// Returns the command [ScuCommand] and a Bool value containing the status.
     public var commandStatusCallback: ((ScuCommandWrapper, Bool) -> Void)? {
-        get {
-            guard let originalCallback = Scu.shared.commandStatusCallback else { return nil }
-            
-            return { commandWrapper, status in
-                let command = commandWrapper.getScuCommand()
-                originalCallback(
-                    command,
-                    status
-                )
-            }
-        }
-        
-        set {
-            if let newCallback = newValue {
-                Scu.shared.commandStatusCallback = { command, status in
-                    let commandWrapper = command.getScuCommandWrapper()
-                    newCallback(commandWrapper, status)
-                }
-            } else {
-                Scu.shared.commandStatusCallback = nil
-            }
-        }
+        get { getCommanStatusCallback() }
+        set { setCommanStatusCallback(newValue) }
     }
-    
 }
 
 // - MARK: States
@@ -51,7 +35,7 @@ extension ScuWrapper {
     
     /// Callback for when the connection state changes.
     public func bleConnectionStateDidChanged(to completion: @escaping (BleConnectionStateWrapper) -> Void) {
-        Scu.shared.bleConnectionStateDidChanged { state in
+        scuSdk.bleConnectionStateDidChanged { state in
             completion(state.getWrapperValue())
         }
     }
@@ -66,16 +50,22 @@ extension ScuWrapper {
     /// Example: "00112233445566778899AABBCCDDEEFF"
     /// If the provided key is not 32 characters long, an error will be thrown.
     public func connect(key: String) {
-        do {
-            try Scu.shared.connect(key: key)
-        } catch {
-            print("Failed to connect: \(error)")
+        queue.async { [weak self] in
+            guard let self else { return }
+            do {
+                try scuSdk.connect(key: key)
+            } catch {
+                print("Failed to connect: \(error.localizedDescription)")
+            }
         }
     }
     
     /// Disconnects the PKC by removing the service and stopping advertising.
     public func disconnect() {
-        Scu.shared.disconnect()
+        queue.async { [weak self] in
+            guard let self else { return }
+            scuSdk.disconnect()
+        }
     }
     
 }
@@ -84,33 +74,67 @@ extension ScuWrapper {
 extension ScuWrapper {
     
     /// Sends a command to the PKC.
-    public func command(type: ScuCommandWrapper, completion: @escaping (NSError?) -> Void) {
+    public func command(type: ScuCommandWrapper, completion: @escaping (ScuErrorWrapper?) -> Void) {
         Task {
             do {
-                try await Scu.shared.command(type: type.getScuCommand())
+                print("Executing command: \(type)")
+                try await scuSdk.command(type: type.getScuCommand())
                 completion(nil) // No error, operation succeeded
+            } catch let scuError as ScuError {
+                completion(ScuErrorWrapper.wrap(scuError))
             } catch {
-                completion(error as NSError) // Pass the error as NSError to Objective-C
+                completion(ScuErrorWrapper.unkown)
             }
         }
     }
     
     /// Stops continuous notifications for a command.
-    public func startContinuousNotification(type: ScuCommandWrapper, completion: @escaping (NSError?) -> Void) {
+    public func startContinuousNotification(type: ScuCommandWrapper, completion: @escaping (ScuErrorWrapper?) -> Void) {
         Task {
             do {
-                try await Scu.shared.startContinuousNotification(type: type.getScuCommand())
+                print("Start Continuous Notification Command: \(type)")
+                try await scuSdk.startContinuousNotification(type: type.getScuCommand())
                 completion(nil) // No error, operation successful
+            } catch let scuError as ScuError {
+                completion(ScuErrorWrapper.wrap(scuError))
             } catch {
-                completion(error as NSError) // Pass the error to Objective-C as NSError
+                completion(ScuErrorWrapper.unkown)
             }
         }
     }
     
     /// Stops continuous notifications for a command.
     public func stopContinuousNotification(type: ScuCommandWrapper) {
-        Scu.shared.stopContinuousNotification(type: type.getScuCommand())
+        scuSdk.stopContinuousNotification(type: type.getScuCommand())
+    }
+
+}
+
+
+// - MARK: Helpers
+extension ScuWrapper {
+    
+    private func getCommanStatusCallback() -> ((ScuCommandWrapper, Bool) -> Void)? {
+        guard let originalCallback = scuSdk.commandStatusCallback else { return nil }
+        
+        return { commandWrapper, status in
+            let command = commandWrapper.getScuCommand()
+            originalCallback(
+                command,
+                status
+            )
+        }
+    }
+    
+    private func setCommanStatusCallback(_ newValue: ((ScuCommandWrapper, Bool) -> Void)?) {
+        if let newCallback = newValue {
+            scuSdk.commandStatusCallback = { command, status in
+                let commandWrapper = command.getScuCommandWrapper()
+                newCallback(commandWrapper, status)
+            }
+        } else {
+            scuSdk.commandStatusCallback = nil
+        }
     }
     
 }
-

@@ -18,16 +18,14 @@ public enum BleConnectionStateWrapper: Int {
 extension ScuSdk.BleConnectionState {
     func getWrapperValue()  -> BleConnectionStateWrapper {
         switch self {
-        case .NotFound:
+        case .NotFound: // if LE is not supported by device
             return .notFound
-        case .NotEnabled:
+        case .NotEnabled: // if Bluetooth is not enabled
             return .notEnabled
-        case .Disconnected:
+        case .Disconnected: // if there is no connection with ECU yet
             return .disconnected
-        case .Connected:
+        case .Connected: // successfully connected to ECU
             return .connected
-        @unknown default:
-            return .notFound
         }
     }
 }

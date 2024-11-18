@@ -13,6 +13,7 @@
 		F0A7D9252CE4BD99007AA0C3 /* ScuWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7D9242CE4BD99007AA0C3 /* ScuWrapper.swift */; };
 		F0A7D9272CE4BDAC007AA0C3 /* ScuCommandWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7D9262CE4BDAC007AA0C3 /* ScuCommandWrapper.swift */; };
 		F0A7D9292CE4BDE9007AA0C3 /* BleConnectionStateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7D9282CE4BDE9007AA0C3 /* BleConnectionStateWrapper.swift */; };
+		F0CFD1172CE4E1A60059DC40 /* ScuErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD1162CE4E1A10059DC40 /* ScuErrorWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,7 @@
 		F0A7D9242CE4BD99007AA0C3 /* ScuWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScuWrapper.swift; sourceTree = "<group>"; };
 		F0A7D9262CE4BDAC007AA0C3 /* ScuCommandWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScuCommandWrapper.swift; sourceTree = "<group>"; };
 		F0A7D9282CE4BDE9007AA0C3 /* BleConnectionStateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleConnectionStateWrapper.swift; sourceTree = "<group>"; };
+		F0CFD1162CE4E1A10059DC40 /* ScuErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScuErrorWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		F0A7D9172CE4BCC3007AA0C3 /* ScuSdkWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				F0CFD1162CE4E1A10059DC40 /* ScuErrorWrapper.swift */,
 				F0A7D9182CE4BCC3007AA0C3 /* ScuSdkWrapper.h */,
 				F0A7D9242CE4BD99007AA0C3 /* ScuWrapper.swift */,
 				F0A7D9262CE4BDAC007AA0C3 /* ScuCommandWrapper.swift */,
@@ -161,6 +164,7 @@
 			files = (
 				F0A7D9252CE4BD99007AA0C3 /* ScuWrapper.swift in Sources */,
 				F0A7D9292CE4BDE9007AA0C3 /* BleConnectionStateWrapper.swift in Sources */,
+				F0CFD1172CE4E1A60059DC40 /* ScuErrorWrapper.swift in Sources */,
 				F0A7D9272CE4BDAC007AA0C3 /* ScuCommandWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
