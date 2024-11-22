@@ -28,6 +28,9 @@ public class ScuWrapper: NSObject {
         get { getCommanStatusCallback() }
         set { setCommanStatusCallback(newValue) }
     }
+    
+    /// Callback used to receive the BcmDoor
+    public var bcmDoorChangeCallback: ((BcmDoorWrapper) -> Void)? = nil
 }
 
 // - MARK: States
@@ -39,7 +42,6 @@ extension ScuWrapper {
             completion(state.getWrapperValue())
         }
     }
-    
 }
 
 // - MARK: Utility
@@ -74,31 +76,27 @@ extension ScuWrapper {
 extension ScuWrapper {
     
     /// Sends a command to the PKC.
-    public func command(type: ScuCommandWrapper, completion: @escaping (ScuErrorWrapper?) -> Void) {
+    public func command(type: ScuCommandWrapper, completion: @escaping (String?) -> Void) {
         Task {
             do {
                 print("Executing command: \(type)")
                 try await scuSdk.command(type: type.getScuCommand())
                 completion(nil) // No error, operation succeeded
-            } catch let scuError as ScuError {
-                completion(ScuErrorWrapper.wrap(scuError))
             } catch {
-                completion(ScuErrorWrapper.unkown)
+                completion(error.localizedDescription)
             }
         }
     }
     
     /// Stops continuous notifications for a command.
-    public func startContinuousNotification(type: ScuCommandWrapper, completion: @escaping (ScuErrorWrapper?) -> Void) {
+    public func startContinuousNotification(type: ScuCommandWrapper, completion: @escaping (String?) -> Void) {
         Task {
             do {
                 print("Start Continuous Notification Command: \(type)")
                 try await scuSdk.startContinuousNotification(type: type.getScuCommand())
                 completion(nil) // No error, operation successful
-            } catch let scuError as ScuError {
-                completion(ScuErrorWrapper.wrap(scuError))
             } catch {
-                completion(ScuErrorWrapper.unkown)
+                completion(error.localizedDescription)
             }
         }
     }
@@ -108,6 +106,18 @@ extension ScuWrapper {
         scuSdk.stopContinuousNotification(type: type.getScuCommand())
     }
 
+}
+
+extension ScuWrapper: ScuStatusCommandDelegate {
+    
+    public func onBcmDoorChange(value: ScuSdk.BcmDoor) {
+        bcmDoorChangeCallback?(value.getBcmDoorWrapper())
+    }
+    
+    public func onPlgmTrSwChange(value: ScuSdk.PlgmTrSw) { }
+    
+    public func onBcmSunroofPosnChange(value: ScuSdk.BcmSunroofPosn) { }
+    
 }
 
 

@@ -8,36 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		F0A7D9192CE4BCC3007AA0C3 /* ScuSdkWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F0A7D9182CE4BCC3007AA0C3 /* ScuSdkWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0A7D9212CE4BCF1007AA0C3 /* ScuSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A7D91F2CE4BCEC007AA0C3 /* ScuSdk.framework */; };
-		F0A7D9222CE4BCF1007AA0C3 /* ScuSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0A7D91F2CE4BCEC007AA0C3 /* ScuSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F0A7D9252CE4BD99007AA0C3 /* ScuWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7D9242CE4BD99007AA0C3 /* ScuWrapper.swift */; };
 		F0A7D9272CE4BDAC007AA0C3 /* ScuCommandWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7D9262CE4BDAC007AA0C3 /* ScuCommandWrapper.swift */; };
 		F0A7D9292CE4BDE9007AA0C3 /* BleConnectionStateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7D9282CE4BDE9007AA0C3 /* BleConnectionStateWrapper.swift */; };
-		F0CFD1172CE4E1A60059DC40 /* ScuErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD1162CE4E1A10059DC40 /* ScuErrorWrapper.swift */; };
+		F0CFD1172CE4E1A60059DC40 /* BcmDoorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD1162CE4E1A10059DC40 /* BcmDoorWrapper.swift */; };
+		F0E007402CED0CC30076EE72 /* ScuSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E0073F2CED0CC30076EE72 /* ScuSdk.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F0A7D9232CE4BCF1007AA0C3 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F0A7D9222CE4BCF1007AA0C3 /* ScuSdk.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F0A7D9152CE4BCC3007AA0C3 /* ScuSdkWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScuSdkWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A7D9182CE4BCC3007AA0C3 /* ScuSdkWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScuSdkWrapper.h; sourceTree = "<group>"; };
-		F0A7D91F2CE4BCEC007AA0C3 /* ScuSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScuSdk.framework; sourceTree = "<group>"; };
 		F0A7D9242CE4BD99007AA0C3 /* ScuWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScuWrapper.swift; sourceTree = "<group>"; };
 		F0A7D9262CE4BDAC007AA0C3 /* ScuCommandWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScuCommandWrapper.swift; sourceTree = "<group>"; };
 		F0A7D9282CE4BDE9007AA0C3 /* BleConnectionStateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleConnectionStateWrapper.swift; sourceTree = "<group>"; };
-		F0CFD1162CE4E1A10059DC40 /* ScuErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScuErrorWrapper.swift; sourceTree = "<group>"; };
+		F0CFD1162CE4E1A10059DC40 /* BcmDoorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BcmDoorWrapper.swift; sourceTree = "<group>"; };
+		F0E0073F2CED0CC30076EE72 /* ScuSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScuSdk.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0A7D9212CE4BCF1007AA0C3 /* ScuSdk.framework in Frameworks */,
+				F0E007402CED0CC30076EE72 /* ScuSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +40,8 @@
 		F0A7D90B2CE4BCC3007AA0C3 = {
 			isa = PBXGroup;
 			children = (
-				F0A7D91F2CE4BCEC007AA0C3 /* ScuSdk.framework */,
 				F0A7D9172CE4BCC3007AA0C3 /* ScuSdkWrapper */,
+				F0E0073E2CED0CC30076EE72 /* Frameworks */,
 				F0A7D9162CE4BCC3007AA0C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,13 +57,21 @@
 		F0A7D9172CE4BCC3007AA0C3 /* ScuSdkWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				F0CFD1162CE4E1A10059DC40 /* ScuErrorWrapper.swift */,
+				F0CFD1162CE4E1A10059DC40 /* BcmDoorWrapper.swift */,
 				F0A7D9182CE4BCC3007AA0C3 /* ScuSdkWrapper.h */,
 				F0A7D9242CE4BD99007AA0C3 /* ScuWrapper.swift */,
 				F0A7D9262CE4BDAC007AA0C3 /* ScuCommandWrapper.swift */,
 				F0A7D9282CE4BDE9007AA0C3 /* BleConnectionStateWrapper.swift */,
 			);
 			path = ScuSdkWrapper;
+			sourceTree = "<group>";
+		};
+		F0E0073E2CED0CC30076EE72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0E0073F2CED0CC30076EE72 /* ScuSdk.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +96,6 @@
 				F0A7D9112CE4BCC3007AA0C3 /* Sources */,
 				F0A7D9122CE4BCC3007AA0C3 /* Frameworks */,
 				F0A7D9132CE4BCC3007AA0C3 /* Resources */,
-				F0A7D9232CE4BCF1007AA0C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,7 +156,7 @@
 			files = (
 				F0A7D9252CE4BD99007AA0C3 /* ScuWrapper.swift in Sources */,
 				F0A7D9292CE4BDE9007AA0C3 /* BleConnectionStateWrapper.swift in Sources */,
-				F0CFD1172CE4E1A60059DC40 /* ScuErrorWrapper.swift in Sources */,
+				F0CFD1172CE4E1A60059DC40 /* BcmDoorWrapper.swift in Sources */,
 				F0A7D9272CE4BDAC007AA0C3 /* ScuCommandWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,7 +226,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = arm64;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -296,7 +288,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = arm64;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -336,7 +328,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ScuSdkWrapper.ScuSdkWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -344,7 +336,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = arm64;
 			};
@@ -383,14 +375,14 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ScuSdkWrapper.ScuSdkWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = arm64;
 			};
