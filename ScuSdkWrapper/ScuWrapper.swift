@@ -110,6 +110,10 @@ extension ScuWrapper {
 
 extension ScuWrapper: ScuStatusCommandDelegate {
     
+    public func registerStatusCommandDelegate() {
+        scuSdk.statusCommandDelegate = self
+    }
+    
     public func onBcmDoorChange(value: ScuSdk.BcmDoor) {
         bcmDoorChangeCallback?(value.getBcmDoorWrapper())
     }
